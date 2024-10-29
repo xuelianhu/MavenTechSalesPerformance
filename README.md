@@ -59,4 +59,4 @@ The final page of the dashboard allows sales managers to view their team's perfo
 ![Performance Overtime](https://github.com/user-attachments/assets/7b56eb1c-f83f-4a10-a3a9-18d385a3caf5)
 
 
-The dashboard can be found in Tableau Public [here]([https://public.tableau.com/app/profile/xuelian.hu/viz/RowHealthDashboard_17263079833780/Dashboard?publish=yes](https://public.tableau.com/app/profile/xuelian.hu/viz/MavenTechSalesPerformance_17302157889770/CurrentQuarterPerformance?publish=yes)). 
+The dashboard can be found in Tableau Public [here](https://public.tableau.com/app/profile/xuelian.hu/viz/MavenTechSalesPerformance_17302157889770/CurrentQuarterPerformance?publish=yes). 
