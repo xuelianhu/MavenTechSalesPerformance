@@ -26,7 +26,9 @@ As the dashboard is interactive, I also focused on making it user friendly for a
 The dashboard sections are explained further below.
 
 **Current Quarter Performance**
+
 ![Current Quarter Performance](https://github.com/user-attachments/assets/a4708276-68db-46f2-a1d9-b511d1440e10)
+
 This is the main page of the report, containing the most critical information for sales managers. Users select their name from the sales manager filter, and this populates all pages of the dashboard with their team's information.
 
 The key KPIs are shown clearly at the top of the page, with figures for the previous quarter and the average figure across all sales team for each metric provided below for additional context. This allows the sales manager to see their own figures and understand generally how they are tracking against the remaining teams and towards their own goals.
@@ -34,12 +36,13 @@ The key KPIs are shown clearly at the top of the page, with figures for the prev
 Users can click the question mark to view more information about the dashboard, and see a definition of how each metric has been calculated, to assist with interpreting the dashboard.
 
 From the total sales card, users can click the arrow to dive deeper into the sales breakdown for the current quarter. This helps them to understand where they've had success and even see itemised sales data if required.
+
 ![Current Quarter Sales](https://github.com/user-attachments/assets/ad72c717-9adb-44cf-a664-fbaf7c3f36ce)
 
 
 From the potential to close card, managers can also dive deeper into all opportunities labelled as engaging for their team. They can use this detail to prioritise actions such as following up offers to close before end of quarter, and CRM cleanups e.g., opportunities that have been open for too long and need to be marked as lost.
-![Open Opportunities Report ](https://github.com/user-attachments/assets/205c4cdf-8bb7-4b01-968c-00343c32c861)
 
+![Open Opportunities Report ](https://github.com/user-attachments/assets/205c4cdf-8bb7-4b01-968c-00343c32c861)
 
 The current quarter performance page then steps deeper into the data, with the key KPIs listed against each individual sales agent, and conditional formatting highlighting in red which team members may be struggling in a particular area. This allows the sales manager to identify both areas they can focus on to improve the performance, and individuals who may require additional support. The product level breakdown also helps identify specific areas of improvement for the team as a whole and individuals.
 
@@ -49,7 +52,6 @@ While it's not the most important goal for the sales managers, they would also l
 
 ![Current Quarter  Performance by Team](https://github.com/user-attachments/assets/e66a49f5-0d63-49a5-a25a-afacd276f25e)
 
-
 **Performance Over Time**
 
 The final page of the dashboard allows sales managers to view their team's performance over the previous quarters to identify trends.
@@ -57,22 +59,4 @@ The final page of the dashboard allows sales managers to view their team's perfo
 ![Performance Overtime](https://github.com/user-attachments/assets/7b56eb1c-f83f-4a10-a3a9-18d385a3caf5)
 
 
-
-
-
-
-
-
-The dashboard can be found in Tableau Public [here](https://public.tableau.com/app/profile/xuelian.hu/viz/RowHealthDashboard_17263079833780/Dashboard?publish=yes). This dashboard enables users to filter by plan, campaign type, and state, and focuses on trends and values in marketing metrics, signup metrics, and claim metrics.
-
-![Dashboard](https://github.com/user-attachments/assets/6600f5d9-d8be-476d-a0c5-30bc4346fd3d)
-
-## Presentation Sample
-
-The presentation created for the marketing team walks through the insights and recommendations above and can be found [here](https://docs.google.com/presentation/d/1Qjl3hbwY-V2RYnwlTXEb51t88nmyRfAf/edit#slide=id.p1). Some extracts are presented below for easy viewing.
-
-<img width="1281" alt="Screenshot 2024-09-14 at 12 02 25" src="https://github.com/user-attachments/assets/3277200f-607b-4914-8edc-69a5611250d3">
-
-<img width="1275" alt="Screenshot 2024-09-14 at 12 02 43" src="https://github.com/user-attachments/assets/1dabdfed-a53c-4da0-8589-03f232471be3">
-
-<img width="1280" alt="Screenshot 2024-09-14 at 12 03 01" src="https://github.com/user-attachments/assets/26165bf0-a29e-44f3-8577-90ce01d94e52">
+The dashboard can be found in Tableau Public [here]([https://public.tableau.com/app/profile/xuelian.hu/viz/RowHealthDashboard_17263079833780/Dashboard?publish=yes](https://public.tableau.com/app/profile/xuelian.hu/viz/MavenTechSalesPerformance_17302157889770/CurrentQuarterPerformance?publish=yes)). 
