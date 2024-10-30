@@ -10,41 +10,56 @@ The dataset contained records exported from MavenTech's CRM from October 2016 to
 ## Key Assumptions
 When creating an interactive dashboard, I always like to chat with the users to make sure I truly understand the intended purpose and the questions they seek to answer with the dashboard. In the absence of being able to chat with the sales managers, I made the following key assumptions which I used to guide my dashboard design.
 
-* The main goal for sales managers is viewing the current state of play for their team, and obtaining actionable information. The key questions they want to answer are:
+* **The main goal for sales managers is viewing the current state of play for their team, and obtaining actionable information.** The key questions they want to answer are:
   * How is my team (as a whole and individual team members) tracking against our key KPIs?
   * Are there team members who require extra support in certain areas?
   * Where should I focus my efforts for the rest of the quarter to improve performance?
   * Is my team performing above average compared to the rest of the business?
-* Their main KPI is the dollar value of sales made, however related metrics such as number of sales, conversion %, and average sales value are also important and help to understand their total sales value.
+* Their main KPI is **the dollar value of sales made**, however related metrics such as **number of sales**, **conversion %**, and **average sales value** are also important and help to understand their total sales value.
 * They may also at times want to dive deeper and look at their team's performance over the year or in comparison to the other sales teams.
 * As the dashboard is intended for the sales managers, the most important view to them is to see their own team, rather than an Exec dashboard with higher level team comparisons. They may however like to look at other sales teams in more detail and there is no requirement for row level security to prevent them access to other team data.
-* It is assumed that the "Current quarter" is Q4 2017, which is the latest time period recorded in the dataset, however in reality this dashboard would continuously update over time as new data is added.
+* It is assumed that the "Current quarter" is Q4 2017, which is the latest time period recorded in the dataset.
+## Key Metrics
+* Total Sales: The cumulative revenue generated from all completed sales in Q4 2017.
+* Avg.Sale Value: The average monetary value of the selected sales team.
+* Avg.Weeks to Close: The average weeks it takes to close a sale in the sales pipeline(Prospecting > Engaging > Won) .
+* New Opportunities: The number of potential sales leads generated in Q4 2017.
+* Potential to Close: Potential sales values for records in Prospecting or Engaging stages.
+* Conversion %: The percentage of opportunities that convert to actual sales.
 
 ## The Dashboard
-As the dashboard is interactive, I also focused on making it user friendly for audiences who may not use Power BI every day. If the sales managers don't feel comfortable using the dashboard, there's no value to be gained. For this reason, I added a help page covering basic dashboard functionality and defining how the key metrics were calculated. This ensures sales managers canconfidently navigate the dashboard, and clearly interpret the information they are seeing and answer their key questions.
 
-The dashboard sections are explained further below.
+Based on the dashboard, here're the insights for Sales manager Celia Rouche.
 
 **Current Quarter Performance**
 
 ![Current Quarter Performance](https://github.com/user-attachments/assets/a4708276-68db-46f2-a1d9-b511d1440e10)
 
-This is the main page of the report, containing the most critical information for sales managers. Users select their name from the sales manager filter, and this populates all pages of the dashboard with their team's information.
-
-The key KPIs are shown clearly at the top of the page, with figures for the previous quarter and the average figure across all sales team for each metric provided below for additional context. This allows the sales manager to see their own figures and understand generally how they are tracking against the remaining teams and towards their own goals.
-
-Users can click the question mark to view more information about the dashboard, and see a definition of how each metric has been calculated, to assist with interpreting the dashboard.
-
-From the total sales card, users can click the arrow to dive deeper into the sales breakdown for the current quarter. This helps them to understand where they've had success and even see itemised sales data if required.
+* **Key Insights**
+   * **Overall Sales Decline:**
+     * Total sales for the quarter are €430K, down by 12.3% compared to the last quarter. Average sale value also decreased to €2,403, down 14.7%.
+     * New opportunities dropped significantly to 179 (a 54.6% decrease from last quarter), suggesting a potential issue with lead generation or sales outreach efforts.
+   * **Agent Performance:**
+     * Vicki Laflamme leads with the highest number of sales (68) and total sales value (€139,082), despite having a relatively low average sale value of €2,045.
+     * Elease Gluck has the highest average sale value at €3,792, though with fewer sales overall (23).
+     * Markita Hansen has the lowest conversion rate (50.7%) and a low average sale value of €1,580, indicating a potential area for improvement in her sales strategy.
+   * **Product Performance:**
+     * MG Advanced is the top-performing product in total sales (€174,791) with the highest conversion rate (70.8%), indicating a strong product-market fit.
+     * GTX 500 also shows high total sales (€83,377) but with a significantly lower conversion rate (60%) and only 3 sales. This suggests a high-value product with fewer transactions.
+     * GTX Plus Basic and GTX Basic have low total sales despite reasonable conversion rates, implying they may not be as appealing or have lower market demand.
 
 ![Current Quarter Sales](https://github.com/user-attachments/assets/ad72c717-9adb-44cf-a664-fbaf7c3f36ce)
 
-
-From the potential to close card, managers can also dive deeper into all opportunities labelled as engaging for their team. They can use this detail to prioritise actions such as following up offers to close before end of quarter, and CRM cleanups e.g., opportunities that have been open for too long and need to be marked as lost.
+* **Key Insights**
+  * **Sector Performance**:
+    * Retail leads with €85K in sales, followed by Finance** (€65K) and Entertainment (€63K). These three sectors contribute a significant portion of the total sales, indicating strong demand.
+    * Lower-performing sectors include Employment(€20K) and Marketing(€18K), suggesting these areas may have less market demand or need a tailored approach to increase sales.
+  * **Top Accounts**:
+    * Xx-holding is the top account with €63K in sales, followed by Cheers(€35K) and Singletechno (€23K). These key accounts represent valuable, high-revenue customers and should be prioritized for retention and upselling.
 
 ![Open Opportunities Report ](https://github.com/user-attachments/assets/205c4cdf-8bb7-4b01-968c-00343c32c861)
 
-The current quarter performance page then steps deeper into the data, with the key KPIs listed against each individual sales agent, and conditional formatting highlighting in red which team members may be struggling in a particular area. This allows the sales manager to identify both areas they can focus on to improve the performance, and individuals who may require additional support. The product level breakdown also helps identify specific areas of improvement for the team as a whole and individuals.
+From the potential to close card, manager can also dive deeper into all opportunities labelled as engaging for their team. They can use this detail to prioritise actions such as following up offers to close before end of quarter, and CRM cleanups e.g., opportunities that have been open for too long and need to be marked as lost.
 
 **Performance by Team**
 
@@ -54,9 +69,34 @@ While it's not the most important goal for the sales managers, they would also l
 
 **Performance Over Time**
 
-The final page of the dashboard allows sales managers to view their team's performance over the previous quarters to identify trends.
+The "Performance Over Time" dashboard shows how Celia Rouche’s team performed across various quarters in 2017, with metrics on total sales, new opportunities, agent sales contributions, and conversion rates by product. Here’s an analysis along with recommendations:
 
+* **Key Insights**
+  * **Total Sales by Quarter**:
+    * Sales peaked in Q2 with approximately €600K but declined slightly in Q3 and further in Q4. This trend suggests a strong start after Q1 but difficulty in maintaining momentum in the latter half of the year.
+    * The steady drop in sales in Q3 and Q4 might indicate seasonal fluctuations or challenges in converting opportunities in the latter part of the year.
+
+  * **Agent Performance**:
+    * Markita Hansen leads with total sales of €329K, followed by Elease Gluck(€289K), Hayden Neloms(€272K), and Rosalina Dieter(€235K). These agents represent top performers who contribute heavily to overall sales.
+    * There may be an opportunity to provide additional training or resources for other agents to help lift their performance to match that of the top agents.
+
+  * **New Opportunities by Quarter**:
+    * The number of new opportunities peaked in Q3, reaching 394, before a sharp drop to 179 in Q4. This decrease aligns with the decline in total sales, suggesting that fewer new opportunities contributed to lower revenue in Q4.
+    * The drop in new opportunities from Q3 to Q4 could be due to market conditions, a reduction in lead generation, or lower engagement efforts toward the end of the year.
+
+  * **Conversion by Quarter and Product**:
+    * Conversion rates were highest in Q1 (85.6%) and dropped significantly in Q2 (61.2%) and Q3 (60.1%), with a slight recovery in Q4 (61.8%).
+    * GTX Basic maintained a relatively stable conversion rate but declined over the year from 88.2% in Q1 to 62.5% in Q4.
+    * GTX Pro and MG Advanced showed fluctuations but had stronger conversion rates in Q4, reaching 60.7% and 70.8%, respectively. Products like GTX Plus Basic and GTX Plus Pro had lower conversion rates, indicating potential difficulties in converting these specific products.
+ 
 ![Performance Overtime](https://github.com/user-attachments/assets/7b56eb1c-f83f-4a10-a3a9-18d385a3caf5)
 
+## Recommendations
+  * **Enhance Lead Generation and Opportunity Conversion:** Given the drop in total sales and new opportunities decline, consider ramping up marketing and outreach efforts to generate more qualified leads. Collaborate with the marketing team to assess lead generation channels and campaigns.
+  * **Targeted Agent Training:** Provide tailored training to agents like Markita Hansen to improve conversion rates and average sale values. Review her sales tactics, product knowledge, and customer interaction strategies.
+  * **Product Strategy Adjustment:** Evaluate the underperformance of products like GTX Plus Basic and GTX Basic. Consider marketing strategies to improve product appeal or adjust pricing based on market research.Focus on products like MG Advanced and GTX 500 which have shown strong sales, potentially increasing inventory or promotional efforts around these high-performing items.
+  * **Quarterly Goal Adjustments:** Given the downturn in sales and opportunities, revise quarterly targets and forecasts for the next period. Set realistic, data-driven goals based on current trends and work closely with the team to strategize on achievable objectives.
+  * **Increase Focus on High-Performing Sectors**:Prioritize sales and marketing resources in the Retail, Finance, and Entertainment sectors. Tailor messaging to these industries and consider account-based marketing strategies to strengthen relationships and increase sales.
+  * **Account Retention and Growth Strategy**: 1)Focus on building strong relationships with top accounts, especially Xx-holding, Cheers, and Singletechno. Implement loyalty programs, offer exclusive deals, or involve them in product feedback loops to increase customer satisfaction and retention. 2) For smaller accounts, analyze their growth potential. If they show promise, develop targeted sales tactics to convert them into larger accounts.
 
 The dashboard can be found in Tableau Public [here](https://public.tableau.com/app/profile/xuelian.hu/viz/MavenTechSalesPerformance_17302157889770/CurrentQuarterPerformance?publish=yes). 
